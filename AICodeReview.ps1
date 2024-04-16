@@ -155,7 +155,7 @@ $CodeChanges
             messages = @(
                 @{
                     role = "system"
-                    content = "This is a system message to set the behavior of the assistant."
+                    content = "As as AI assistant, your role is to provide  a detailed code review. Analyze the provided code changes, identify potential issues, suggest improvements, and adhere to best coding practices. Your analysis should be through and consider all aspects of code, including syntax, logic, efficiency and style."
                 },
                 @{
                     role = "user"
