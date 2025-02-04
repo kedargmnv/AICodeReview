@@ -1,6 +1,8 @@
 # AI Code Review
 
-This repository contains a PowerShell script (`AICodeReview.ps1`) that uses OpenAI's GPT-4 model to perform an AI-based code review on a GitLab merge request.
+This repository contains a PowerShell script (`AICodeReview.ps1`) that automates code reviews for GitLab merge requests using OpenAI's GPT-4. It analyzes code changes, ignores files in `.aiignore`, and posts the review as comments. 
+
+This script is designed to work with multiple GitLab projects. To use it with a different project, change the `RepositoryId` parameter in the script's command when you run it.  Each project requires its own `RepositoryId`.
 
 ## How it works
 
@@ -28,3 +30,7 @@ You can run the script in PowerShell with the following command:
 
 ```powershell
 .\AICodeReview.ps1 -GitLabToken "your-gitlab-token" -gitLabApiUrl "your-gitlab-api-url" -repositoryId "your-repository-id" -openAiApiKey "your-openai-api-key"
+```
+
+Enjoyed this? Consider supporting me!<br>
+<a href="https://www.buymeacoffee.com/kedargmnv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
